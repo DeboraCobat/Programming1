@@ -1,0 +1,55 @@
+ICA-2
+--------
+Suppose you have a Province class that contains name, population, and area. 
+Answer the following questions.
+
+a. What is the name of the class?
+Province
+
+b. What are the instance variables?
+name, population and area
+
+c. What are the methods?
+Getters and Setters - 
+getName(), getPopulation(), getArea() 
+setName(String name), setPopulation(int population), setArea(double area)
+
+d. What are the private members?
+
+ private String provinceName;
+ private int provincePopulation;
+ private double provinceArea;
+
+e. What are the public members?
+
+public Province(String name, int population, double area) {
+    provinceName = name;
+    provincePopulation = population;
+    provinceArea = area;
+  }
+
+  public String getProvinceName() {
+    return this.provinceName;
+  }
+
+  public void setprovinceName(String provinceName) {
+    this.provinceName = provinceName;
+  }
+
+  public int getProvincePulation() {
+    return this.lName;
+  }
+
+  public void setProvincePopulation (int provincePopulation) {
+    this.provincePopulation = provincePopulation;
+  }
+
+  public int getProvinceArea() {
+    return this.provinceArea;
+  }
+
+  public void setProvinceArea(int provinceArea) {
+    this.provinceArea = provinceArea;
+  }
+
+

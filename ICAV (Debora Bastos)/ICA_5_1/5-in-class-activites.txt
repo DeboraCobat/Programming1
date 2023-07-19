@@ -1,0 +1,66 @@
+In-Class Activities - Class 5
+
+ICA-5-1
+----------
+Three employees in a company are up for a special pay increase. You are
+given a file, say EmployeesSalary.txt, with the following data:
+
+Miller Andrew 65789.87 5
+Green Sheila 75892.56 6
+Sethi Amit 74900.50 6.1
+
+Each input line consists of an employee’s last name, first name, current salary,
+and percent pay increase. For example, in the first input line, the last name of
+the employee is Miller, the first name is Andrew, the current salary is
+65789.87, and the pay increase is 5%. Write a program that reads data from
+the specified file and stores the output in the file EmployeesUpdatedSalary.txt.  
+For each employee, the data must be output in the following form: firstName
+lastName updatedSalary. Format the output of decimal numbers to two
+decimal places.
+Save the file as EmployeesUpdatedSalary.java.  
+
+ICA-5-2
+----------
+Write a program that calculates and prints the monthly paycheck for an
+employee. The net pay is calculated after taking the following deductions:
+
+	Federal Income Tax: 		15%
+	State Tax: 					3.5%
+	Social Security Tax: 		5.75%
+	Medicare/Medicaid Tax:		2.75%
+	Pension Plan: 				5%
+	Health Insurance: 			$75.00
+
+Your program should prompt the user to input the gross amount and the
+employee name. 
+
+For example:
+Enter employee name: John Smith
+
+John Smith
+Enter gross amount: 3575.00
+
+The output will be stored in a file (MonthlyPaycheck.txt). 
+Format your output to have two decimal places. A sample output follows:
+
+Bill Robinson
+Gross Amount: 			$ 3575.00
+Federal Tax: 			$ 536.25
+State Tax: 				$ 125.13
+Social Security Tax: 	$ 205.56
+Medicare/Medicaid Tax: 	$ 98.31
+Pension Plan: 			$ 178.75
+Health Insurance: 		$ 75.00
+Net Pay: 				$ 2356.00
+
+Save the file as MonthlyPaycheck.java.  
+
+Hint:
+        federalTax = grossAmount * FEDERAL_TAX_RATE;
+	  	stateTax = grossAmount * STATE_TAX_RATE;
+	   	socialSecurityTax = grossAmount * SOCIAL_SECURITY_TAX_RATE;
+	  	medicareMedicaidTax = grossAmount * MEDICARE_MEDICATE_TAX_RATE;
+	  	pensionContribution = grossAmount * PENSION_PLAN_RATE;
+	   	netPay = grossAmount - federalTax - stateTax
+		       - socialSecurityTax - medicareMedicaidTax
+			   - pensionContribution - HEALTH_INSURANECE;
